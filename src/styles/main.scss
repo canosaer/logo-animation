@@ -24,7 +24,7 @@ TABLE OF CONTENTS:
 @use 'logo';
 
 /* 2. Fonts ================================== */
-@import url(https://fonts.googleapis.com/css2?family=Audiowide&family=Yellowtail&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Audiowide&family=Yellowtail&family=Monoton&display=swap);
 
 /* 3. General ================================ */
 
@@ -43,7 +43,7 @@ body{
 #root{
 	@include mixins.default-grid;
 	grid-template-rows: 100vh;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 0.33fr 1fr 1fr 0.33fr;
 }
 
 main{

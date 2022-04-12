@@ -9,7 +9,7 @@ horizontalBars.fill('logo1__bar logo1__bar_horizontal')
 function App() {
   return (
     <>
-      <main className="logo1">
+      <section className="logo1">
         <figure className="logo1__image">
           {verticalBars.map((bar, i) => {
             const key = `vertical-bar--${i}`
@@ -33,9 +33,17 @@ function App() {
           </section>
         </figure>
         <figcaption className="logo1__name">
+          Eric Canosa
+        </figcaption>
+      </section>
+      <section className="logo2">
+        <figure className="logo2__image">
+            E
+        </figure>
+        <figcaption className="logo2__name">
             Eric Canosa
         </figcaption>
-      </main>
+      </section>
     </>
   );
 }

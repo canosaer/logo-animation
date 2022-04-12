@@ -7,6 +7,7 @@
     @include mixins.default-grid;
     place-self: center center;
     cursor: pointer;
+    grid-column: 2/3;
     
 
     &:hover .logo1__image{
@@ -31,8 +32,6 @@
     &__image{
         width: 7.35rem;
         height: 7.35rem;
-        // width: 8.45rem;
-        // height: 8.45rem;
         display: flex;
         justify-content: space-between;
         position: relative;
@@ -74,13 +73,39 @@
     &__name{
         text-align: center;
         font-size: 1.75rem;
-        // font-size: 1.3rem;
         margin-top: 0.5rem;
-        // color: #e906f2;
         border-top: 0px #39cadb solid;
         border-bottom: 0px #39cadb solid;
         transition: all 0.5s ease-in-out;
         font-family: 'Yellowtail', cursive;
-        // font-family: 'Audiowide', cursive;
     }
+}
+
+.logo2{
+    @include mixins.default-grid;
+    place-self: center center;
+    font-family: 'Audiowide', cursive;
+    cursor: pointer;
+    grid-column: 3/4;
+
+    &:hover .logo2__name{
+        color: #39cadb;
+    }
+
+    &__image{
+        font-size: 8.3rem;
+        text-align: center;
+        background: linear-gradient(#39cadb, #e906f2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__name{
+        text-align: center;
+        font-size: 1.3rem;
+        color: #e906f2;
+        transition: all 0.4s ease-in-out;
+    }
+
+
 }
